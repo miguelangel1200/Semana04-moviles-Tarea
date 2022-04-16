@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AndroidButtonActivity"
+    tools:ignore="ExtraText">
+    androidx.appcompat.widget.AppCompatButton
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSimpleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#25aaff"
+            android:onClick="callSimpleButton"
+            android:padding="10dp"
+            android:text="@string/this_is_simple_android_button"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#25aaff"
+            android:drawableLeft="@android:drawable/sym_call_outgoing"
+            android:onClick="callSimpleButton"
+            android:padding="10dp"
+            android:text="@string/button_with_icon_in_left" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#25aaff"
+            android:drawableRight="@android:drawable/sym_call_outgoing"
+            android:onClick="callRightIconButton"
+            android:padding="10dp"
+            android:text="@string/button_with_icon_in_right" />
+
+        <Button
+
+            android:layout_width="299dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ejemplo1"
+            android:onClick="callSimpleButton"
+            android:padding="10dp"
+            android:text="@string/button_with_background_image" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_border"
+            android:onClick="callBorderButton"
+            android:padding="10dp"
+            android:text="@string/button_with_border_color" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_radius"
+            android:onClick="callBorderRadiusButton"
+            android:padding="10dp"
+            android:text="@string/button_with_border_radius" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_button"
+            android:onClick="callRoundButton"
+            android:padding="10dp"
+            android:text="@string/round_button" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:onClick="callMaterialDesignButton"
+            android:textSize="18sp"
+            android:text="@string/material_design_button"  />
+
+    </LinearLayout>
+</ScrollView>
